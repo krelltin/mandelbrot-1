@@ -1,7 +1,11 @@
 # mandelbrot
 Learn about Mandelbrot properties and attempt to create it in the computer
 
-After researching for 8 hours and multiple Wikipedia/Google pages later: we have success.
+8 hours of researching multiple Wikipedia/Google pages,
+
+2 Hours of planning with pseudocode, and
+
+1 Hour of debugging later: We have Success!
 
 
 # Sample Outputs
