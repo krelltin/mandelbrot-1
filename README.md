@@ -16,5 +16,5 @@ save the output via im.save('output.png', 'PNG')
 
 # Sample Outputs
 
-##First Success!
+#First Success!#
 ![image](https://github.com/sedaji/mandelbrot/blob/master/pictures/FIRSTSUCCESS.png?raw=true)
