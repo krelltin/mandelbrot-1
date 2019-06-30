@@ -29,10 +29,10 @@ Learn about Mandelbrot properties and attempt to create it in the computer
 # PIL 
 Learned about python's PIL library which is essential to convert code into image files. 
 
-Create an image object via im = Image.new('RGB', (width, height), (0,0,0))
+Create an image object via ```im = Image.new('RGB', (width, height), (0,0,0))```
 
-asigned draw function with image object via draw = ImageDraw.Draw(im)
+asigned draw function with image object via ```draw = ImageDraw.Draw(im)```
 
-for a certain pixel[i,j] along your canvas via draw.point(([i,j]), (color,color,color))
+for a certain pixel[i,j] along your canvas via ```draw.point(([i,j]), (color,color,color))```
 
-save the output via im.save('output.png', 'PNG')
+save the output via ```im.save('output.png', 'PNG')```
