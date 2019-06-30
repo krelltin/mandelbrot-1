@@ -33,6 +33,6 @@ Create an image object via ```im = Image.new('RGB', (width, height), (0,0,0))```
 
 asigned draw function with image object via ```draw = ImageDraw.Draw(im)```
 
-for a certain pixel[i,j] along your canvas via ```draw.point(([i,j]), (color,color,color))```
+for a certain pixel```[i,j]``` along your canvas via ```draw.point(([i,j]), (color,color,color))```
 
 save the output via ```im.save('output.png', 'PNG')```
