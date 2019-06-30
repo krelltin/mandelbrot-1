@@ -1,7 +1,7 @@
 # mandelbrot
 Learn about Mandelbrot properties and attempt to create it in the computer
 
-8 hours of researching multiple Wikipedia/Google pages,
+6 hours of researching multiple Wikipedia/Google pages,
 
 2 Hours of planning with pseudocode, and
 
