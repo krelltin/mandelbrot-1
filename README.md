@@ -10,7 +10,7 @@ Learn about Mandelbrot properties and attempt to create it in the computer
 
 # Sample Outputs
 
-<span style="text-align:center;display:block">*First Success!*</span>
+*First Success!*
 ![image](https://github.com/sedaji/mandelbrot/blob/master/pictures/FIRSTSUCCESS.png?raw=true)
 
 *Added Gray Scale*
