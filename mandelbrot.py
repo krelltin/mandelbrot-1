@@ -7,16 +7,14 @@ def mandelbrot(c):
 		if n > 0:
 			z[n] = z[n-1]**2 + c
 			if abs(z[n]) > 2:
-				print(".", end="")
-				return False
-		else:
+				return n
+		elif n == 0:
 			z[n] = n
-	print("*", end="")
-	return True
+	return n
 
 # Image size (pixels)
-width = 1920
-height = 1080 
+width = 3840
+height = 2160 
 
 realNeg = -2
 realPos = 1
@@ -39,12 +37,12 @@ for i in range(height):
 im = Image.new('RGB', (width, height), (0, 0, 0))
 draw = ImageDraw.Draw(im)
 
-color = 0
+# color = 0
 for i in range(width):
 	for j in range(height):
 		c = complex(realPlots[i],imagiPlots[j])
-		if mandelbrot(c) == True:
-			color = 255
-			draw.point([i,j]), (color, color, color)
-			
+		output = mandelbrot(c)
+		color = (255 - int(output * 3.1875))
+		draw.point(([i,j]), (color, color, color))
+
 im.save('output.png', 'PNG')
