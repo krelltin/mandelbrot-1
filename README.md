@@ -1,13 +1,13 @@
 # mandelbrot
 Learn about Mandelbrot properties and attempt to create it in the computer
 
-6 hours of researching multiple Wikipedia/Google pages,
+```6 hours``` of researching multiple Wikipedia/Google pages,
 
-1 hour of planning with pseudocode,
+```1 hour``` of planning with pseudocode,
 
-1 hour of coding and
+```1 hour``` of coding and
 
-1 Hour of debugging later: We have Success!
+```1 hour``` of debugging later: We have Success!
 
 
 # Sample Outputs
