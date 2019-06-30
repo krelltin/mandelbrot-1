@@ -7,16 +7,16 @@ def mandelbrot(c):
 		if n > 0:
 			z[n] = z[n-1]**2 + c
 			if abs(z[n]) > 2:
-				# print(f"{c}:false")
+				print(".", end="")
 				return False
 		else:
 			z[n] = n
-	# print(f"{c}:true")
+	print("*", end="")
 	return True
 
 # Image size (pixels)
-width = 600 
-height = 400 
+width = 1920
+height = 1080 
 
 realNeg = -2
 realPos = 1
