@@ -11,12 +11,12 @@ def mandelbrot(c):
 	for n in range(80):
 		if n > 0:
 			z[n] = z[n-1]**2 + c
-			# If it's distance is greater than 2 from (0,0) NOT part of set
+			# If it's distance is greater than 3 from (0,0) NOT part of set
 			if abs(z[n]) > 3:
 				return n
 		elif n == 0:
 			z[n] = n
-	# If n reaches 80, it's distance is less than 2 from (0,0) it IS part of the set and n = 80
+	# If n reaches 80, it's distance is less than 3 from (0,0) it IS part of the set and n = 80
 	return n
 
 # Image size (pixels)
