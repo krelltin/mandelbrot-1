@@ -55,9 +55,9 @@ draw = ImageDraw.Draw(im)
 for i in range(width):
 	for j in range(height):
 		''' 
-		First loop: iterate over pixel (0,1),(0,2)...(0,1079),(0,1080)
+		First loop: iterate over pixel (0,0),(0,1)...(0,1079),(0,1080)
 		Second loop: iterate over pixel (1,0),(1,1)...(1,1079),(1,1080)
-		Second to last loop: iterate over pixel (1979,0),(1979,1)...(1979,1079),(1979,1080)
+		2nd last loop: iterate over pixel (1979,0),(1979,1)...(1979,1079),(1979,1080)
 		Last loop: iterate over pixel (1980,0),(1980,1)...(1980,1079),(1980,1080) '''
 		c = complex(realPlots[i],imagiPlots[j])
 		# n is returned from the mandelbrot function and assigned to varaible
