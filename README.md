@@ -27,6 +27,9 @@ Learn about Mandelbrot properties and attempt to create it in the computer
 *Light Yellow and changed Plane*
 ![image](https://github.com/sedaji/mandelbrot/blob/master/pictures/reddit.png?raw=true)
 
+*Light Red*
+![image](https://github.com/sedaji/mandelbrot/blob/master/pictures/LIGHTRED.png?raw=true)
+
 
 # PIL 
 Learned about python's PIL library which is essential to convert code into image files. 
