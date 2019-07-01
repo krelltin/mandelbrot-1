@@ -3,7 +3,6 @@ from PIL import Image, ImageDraw
 import random, time
 
 start_time=time.time()
-
 z=[None] * 80
 z[0]=0
 ''' In order to understand the following code, first look up the Mandlebrot Set
