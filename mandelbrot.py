@@ -1,22 +1,22 @@
 #! /usr/bin/python3
 from PIL import Image, ImageDraw
-import random
+import random, time
 
-z = [None] * 80
+start_time=time.time()
+
+z=[None] * 80
+z[0]=0
 ''' In order to understand the following code, first look up the Mandlebrot Set
 You will soon come across lots of foreign terms like complex numbers and the complex plane
 Learn what those mean. Example of a complex number: (-1.9890625000000006 + 0.45624999999995547j) '''
 def mandelbrot(c):
 	# We do this 80 times to make sure a certain complex number is indeed part of the Mandlebrot Set
-	for n in range(80):
-		if n > 0:
-			z[n] = z[n-1]**2 + c
-			# If it's distance is greater than 3 from (0,0) NOT part of set
-			if abs(z[n]) > 3:
-				return n
-		elif n == 0:
-			z[n] = n
-	# If n reaches 80, it's distance is less than 3 from (0,0) it IS part of the set and n = 80
+	for n in range(1,80):
+		z[n] = z[n-1]**2 + c
+		# If it's distance is greater than 2 from (0,0) NOT part of set
+		if abs(z[n]) > 3:
+			return n
+	# If n reaches 80, it's distance is less than 2 from (0,0) it IS part of the set and n = 80
 	return n
 
 # Image size (pixels)
@@ -69,6 +69,7 @@ for i in range(width):
 			''' Depending on n, if it is a HIGH VALUE (like 60) color will be darker(255 = white) (0 = black)
 			if n is LOW (like 5), color will be lighter.'''
 			color = (255 - int(n * 3.1875))
-			draw.point(([i,j]), (color, color, color-random.randint(1,70)))
+			draw.point(([i,j]), (color, color, color-random.randint(50,70)))
 
 im.save('output.png', 'PNG')
+print("--- %s seconds ---" % (time.time() - start_time))
