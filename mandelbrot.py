@@ -1,4 +1,5 @@
-#! /usr/bin/python3
+#! /usr/bin/python3, test
+
 from PIL import Image, ImageDraw
 import random, time
 
